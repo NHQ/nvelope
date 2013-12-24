@@ -1,6 +1,6 @@
 {
   "name": "nvelope",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "enveloping for audio and time domain DSP",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git@github.com:NHQ/nvelope.git"
   },
-  "dependencies" : {
-    "normalie-time" : ""
+  "dependencies": {
+    "normalie-time": ""
   },
   "keywords": [
     "envelope",
