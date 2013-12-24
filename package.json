@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git@github.com:NHQ/nvelope.git"
   },
+  "dependencies" : {
+    "normalie-time" : ""
+  },
   "keywords": [
     "envelope",
     "audio",
