@@ -8,7 +8,7 @@ With this module you can construct arbitrarily long, multipart amplitude modulat
 
 nvelope returns a constructor, which returns the envelope. The envelope take a single argument, time.
 
-It is meant to be used with a visual interface for drawing curves.
+It is meant to be used with a visual interface for drawing curves, which I am building for the html fives.
 
 ## example
 
@@ -22,8 +22,19 @@ var DSPfunction = function(time){
 	return Math.sin(time * Math.PI * 2 * 440) * amod(time)
 }
 ```
+
 ### curves and durations
 curves is an array of arrays, or rayray, each of which is an array of arrays, or rayray, each of which is a set of controlPoints for a quadrtic curve. 
+
+durations is an array of values that correspond to an index in the controlPoints.  Values are the duration in seconds for that curve. 
+
+NOTE: the module determines the total length of your envelope by adding together the durations.  This is important, because the envelope will return zero for any time value falling outside of [0, totalDuration].  That is, the envelope requires a relative time value.  This makes them loopable, by doing this:
+```js
+var DSP = function(time){
+	return sineWave(440) * amod(time % totalDuration)
+} 
+```
+####control points, durations
 
 ```js
 var controlPoits =  [ 
