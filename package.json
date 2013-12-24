@@ -1,0 +1,27 @@
+{
+  "name": "nvelope",
+  "version": "0.2.0",
+  "description": "enveloping for audio and time domain DSP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NHQ/nvelope.git"
+  },
+  "keywords": [
+    "envelope",
+    "audio",
+    "dsp",
+    "jsynth",
+    "baudio",
+    "webaudio"
+  ],
+  "author": "Johnny Honestly <mostmodernist@gmail.com> (http://johnnyscript.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NHQ/nvelope/issues"
+  },
+  "homepage": "https://github.com/NHQ/nvelope"
+}
