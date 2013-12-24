@@ -1,4 +1,4 @@
-var amod = require(__dirname + './amod');
+var amod = require(__dirname + '/amod');
 var tnorm = require('normalize-time');
 
 module.exports = function(pts, durs){
