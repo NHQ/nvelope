@@ -1,6 +1,6 @@
 {
   "name": "nvelope",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "enveloping for audio and time domain DSP",
   "main": "index.js",
   "scripts": {
