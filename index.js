@@ -1,9 +1,10 @@
 var amod = require( './amod.js');
 var tnorm = require('normalize-time');
+var beezy = require('beezy')
 
 module.exports = function(pts, durs){
-	
-	pts = pts.map(amod)
+	pts = pts.map(beezy)
+	//pts = pts.map(amod)
 	var t = 0;
 	var totalDuration = durs.reduce(function(e,i){return e + i}, 0);
 	var tdNormFN = tnorm(t, totalDuration);
